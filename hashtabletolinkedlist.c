@@ -101,7 +101,7 @@ void print_hash_table(struct hash_tablosu *hash_table){
     
 }
 
-void listeyeye_donusturme(struct hash_tablosu *htable, struct cell **liste_basi){
+void listeye_donusturme(struct hash_tablosu *htable, struct cell **liste_basi){
 	int i;
 	for(i=0;i<(htable->tablo_uzunlugu);i++){
 		if(((htable->tablo_basi)+i)->header!=NULL){
@@ -154,7 +154,7 @@ int main(int argc, char** argv) {
 	struct cell *hashtolist = NULL;
 	printf("%s",hashtolist);
 	printf("\n");
-	listeyeye_donusturme(htable,&hashtolist);
+	listeye_donusturme(htable,&hashtolist);
 	printf("\n");
 	print_hash_table(htable);
 	printf("\n");
